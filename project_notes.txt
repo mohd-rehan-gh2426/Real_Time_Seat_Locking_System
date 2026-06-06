@@ -5,3 +5,52 @@ Setup three routes :
 1. "/"  => Home Page
 2. "/profile/:id"  => Profile Page
 3. "/movies" => Movies Page
+
+
+Made Header and Footer.
+
+
+HOMEPAGE UI DESIGN : 
+
+1.Make state location dynamic so it fetches your real time location.
+
+=> So for this we will use react context api, we will store the data in context api and send 
+it to any component.
+
+=> To fetch the real time location we will JS navigation feature to get our current 
+latittude and longitude and we will pass the latitude and logitude to the api and 
+from that we will get our current location.
+
+=> Once we get the location in our context we will display the location through context in header.
+
+So the flow goes like this :
+
+we created a Location, inwhich we uses JS navigator to  find lamgitude and latitude then we pass 
+that latittude and longitude to find the location. and then we use Context to get the location value
+in header and display it dynamically.
+
+
+------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
+
+
+2.Create a Banner Slider
+
+=> For making banner slide we will use react-slick
+
+=> we will create a new component in components/shared folder
+
+=> react slick just has <Slider/> component which just take settings defined. and we can
+have a just apply map to the banners array imported fromm utils and disply images through src attribute.
+
+=> then we can just show the bannerSlider comonent at Home page.
+
+
+-----------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------
+
+3.Create a Recommended movie component
+
+
+
+

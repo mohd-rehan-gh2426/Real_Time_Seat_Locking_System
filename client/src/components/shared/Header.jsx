@@ -1,7 +1,11 @@
 import React from "react";
 import mainLogo from "../../assets/main-icon.png";
 import { FaSearch, FaUser } from "react-icons/fa";
+import map from "../../assets/pin.gif";
+import { useLocation } from "../../context/LocationContext.jsx";
+
 const Header = () => {
+  const { location, loading, error } = useLocation();
   return (
     <div className="w-full text-sm bg-white">
       {/* Top Navbar */}
@@ -29,7 +33,8 @@ const Header = () => {
           {/* Right Part */}
           <div className="flex item-center space-x-6">
             <div className="text-sm font-medium cursor-pointer mt-2">
-              West Bengal &nbsp;
+              {loading && <img src={map} alt="loading..." className="w-10 h-10" />}
+              {location && <p>{location} &nbsp; ▼</p>}
             </div>
             <button
               className="bg-[#f84464] cursor-pointer
