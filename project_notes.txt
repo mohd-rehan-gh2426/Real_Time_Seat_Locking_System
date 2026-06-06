@@ -51,6 +51,11 @@ have a just apply map to the banners array imported fromm utils and disply image
 
 3.Create a Recommended movie component
 
+=> take the movie constants and apply map inside the comaponent
 
 
+-------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------
+
+4.
 
