@@ -17,7 +17,7 @@ const Header = () => {
               alt="logo"
               className="h-8 object-contain cursor-pointer"
             />
-             <div className="relative">
+            <div className="relative">
               <input
                 type="text"
                 placeholder="Search for Movies, Events, Plays, Sports and Activities"
@@ -29,14 +29,44 @@ const Header = () => {
           {/* Right Part */}
           <div className="flex item-center space-x-6">
             <div className="text-sm font-medium cursor-pointer mt-2">
-                    West Bengal &nbsp;
+              West Bengal &nbsp;
             </div>
-            <button className="bg-[#f84464] cursor-pointer
-                    text-white px-4 py-1.5 rounded text-sm">Sign in</button>
+            <button
+              className="bg-[#f84464] cursor-pointer
+                    text-white px-4 py-1.5 rounded text-sm"
+            >
+              Sign in
+            </button>
           </div>
         </div>
       </div>
       {/* Bottom Navbar */}
+      <div className="bg-[#f2f2f2] px-4 md:px-8">
+        <div className="max-w-screen-xl mx-auto flex justify-between items-center py-2 text-gray-700">
+          <div className="flex items-center space-x-6 font-medium">
+            <span
+              onClick={() => navigate("/movies")}
+              className="cursor-pointer hover:text-red-500"
+            >
+              Movies
+            </span>
+            <span className="cursor-pointer hover:text-red-500">Stream</span>
+            <span className="cursor-pointer hover:text-red-500">Events</span>
+            <span className="cursor-pointer hover:text-red-500">Plays</span>
+            <span className="cursor-pointer hover:text-red-500">Sports</span>
+            <span className="cursor-pointer hover:text-red-500">
+              Activities
+            </span>
+          </div>
+
+          <div className="flex item-center space-x-6 text-sm">
+            <span className="cursor-pointer hover:underline">ListYourShow</span>
+            <span className="cursor-pointer hover:underline">Corporates</span>
+            <span className="cursor-pointer hover:underline">Offers</span>
+            <span className="cursor-pointer hover:underline">Gift Cards</span>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
