@@ -1,0 +1,7 @@
+ROUTING AND HEADER FOOTER DESIGN :
+
+Setup three routes :
+
+1. "/"  => Home Page
+2. "/profile/:id"  => Profile Page
+3. "/movies" => Movies Page
